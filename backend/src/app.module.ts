@@ -8,9 +8,10 @@ import { EntriesModule } from './entries/entries.module';
 import { CategoriesModule } from './categories/categories.module';
 import { TagsModule } from './tags/tags.module';
 import { MediaModule } from './media/media.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [DatabaseModule, EntriesModule, CategoriesModule, TagsModule, MediaModule],
+  imports: [DatabaseModule, EntriesModule, CategoriesModule, TagsModule, MediaModule, AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })

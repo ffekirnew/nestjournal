@@ -8,9 +8,9 @@ import { Entry } from './entities/entry.entity';
 export class EntriesController {
   constructor(private entriesService: EntriesService) {}
 
-  @Post()
-  async create(@Body() createEntryDto: CreateEntryDto): Promise<Entry> {
-    return await this.entriesService.create(createEntryDto);
-  }
+  // @Post()
+  // async create(@Body() createEntryDto: CreateEntryDto): Promise<Entry> {
+  //   return await this.entriesService.create(createEntryDto);
+  // }
 }
 

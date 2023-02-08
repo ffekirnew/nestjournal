@@ -7,10 +7,10 @@ import { Entry } from './entities/entry.entity';
 
 @Injectable()
 export class EntriesService {
-  constructor(
-    @InjectRepository(Entry)
-    private entriesRepository: Repository<Entry>
-  ) {}
+  // constructor(
+  //   @InjectRepository(Entry)
+  //   private entriesRepository: Repository<Entry>
+  // ) {}
 
   /**
    * Adds an entry to the database.
@@ -18,9 +18,9 @@ export class EntriesService {
    * @param createEntryDto The data for the new entry.
    * @returns A promise that resolves to an entry.
    */
-  async create(createEntryDto: CreateEntryDto): Promise<Entry> {
-    const createdEntry = this.entriesRepository.create(createEntryDto);
-    return await this.entriesRepository.save(createdEntry);
-  }
+  // async create(createEntryDto: CreateEntryDto): Promise<Entry> {
+  //   const createdEntry = this.entriesRepository.create(createEntryDto);
+  //   return await this.entriesRepository.save(createdEntry);
+  // }
 }
 
