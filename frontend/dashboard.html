@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journaling App</title>
+    <!-- Load Tailwind CSS -->
+    <link href="https://cdn.tailwindcss.com/v2.1.4/tailwind.min.css" rel="stylesheet">
+
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-lg mx-auto my-10 bg-white shadow-lg rounded-lg overflow-hidden">
+      <!-- Header -->
+      <div class="bg-gray-700 px-6 py-4">
+        <h1 class="text-3xl font-bold text-white">Journaling App</h1>
+      </div>
+      <!-- Entry Form -->
+      <form class="px-6 py-4">
+        <div class="mb-4">
+          <label
+            class="block text-gray-700 font-bold mb-2"
+            for="title"
+          >
+            Title
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="title"
+            type="text"
+            placeholder="Title"
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            class="block text-gray-700 font-bold mb-2"
+            for="body"
+          >
+            Body
+          </label>
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="body"
+            placeholder="Write something here..."
+            rows="8"
+          ></textarea>
+        </div>
+        <div class="flex items-center justify-end">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="button"
+          >
+            Save Entry
+          </button>
+        </div>
+      </form>
+      <!-- Entries -->
+      <div class="px-6 py-4">
+        <h2 class="text-2xl font-bold mb-4">Entries</h2>
+        <ul class="divide-y divide-gray-300">
+          <li class="py-4">
+            <a href="#" class="text-lg font-medium text-gray-900">First Entry</a>
+            <p class="mt-2 text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </li>
+          <li class="py-4">
+            <a href="#" class="text-lg font-medium text-gray-900">Second Entry</a>
+            <p class="mt-2 text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </li>
+          <li class="py-4">
+            <a href="#" class="text-lg font-medium text-gray-900">Third Entry</a>
+            <p class="mt-2 text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div
+</body>
+</html>

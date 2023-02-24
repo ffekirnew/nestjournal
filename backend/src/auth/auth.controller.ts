@@ -17,4 +17,15 @@ export class AuthController {
   async signUp(@Body(ValidationPipe) authCredentialsDto: AuthCredentialsDto): Promise<void> {
     await this.authService.signUp(authCredentialsDto);
   }
+
+  /**
+   * Creates a new user.
+   * 
+   * @param authCredentialsDto The data for the sign up.
+   * @returns A promise that relises to a User.
+   */
+  @Post("signin")
+  async signIn(@Body(ValidationPipe) authCredentialsDto: AuthCredentialsDto): Promise<{ accessToken: string }> {
+    return await this.authService.signIn(authCredentialsDto);
+  }
 }
